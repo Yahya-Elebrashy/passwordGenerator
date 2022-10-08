@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="box px-3 my-4">
+        <h3 class="my-4 fw-bold fs-2">Password Generator</h3>
+        <div class="input-display position-relative">
+            <input type="text" class="w-100 py-3 rounded border-0 px-4 fw-bold fs-5" disabled id="display-input">
+            <button class=" position-absolute" id="copy"><i class="fa-solid fa-copy fs-3"></i></button>
+            <p class=" position-absolute fs-6 text-danger d-none" id="copied">copied</p>
+        </div>
+        <div class="my-3 d-flex align-items-center check-box rounded">
+
+            <input type="checkbox" id="uppercase" name="r-group" class="mx-3">
+            <label class="g fw-bold fs-4" for="uppercase">Uppercase</label>
+        </div>
+        <div class="my-3 d-flex align-items-center check-box rounded">
+
+            <input type="checkbox" id="lowercase" name="r-group" class="mx-3">
+            <label class="g fw-bold fs-4" for="lowercase">Lowercase</label>
+        </div>
+        <div class="my-3 d-flex align-items-center check-box rounded">
+
+            <input type="checkbox" id="numbers" name="r-group" class="mx-3">
+            <label class="g fw-bold fs-4" for="numbers">Numbers</label>
+        </div>
+        <div class="my-3 d-flex align-items-center check-box rounded">
+
+            <input type="checkbox" id="symbols" name="r-group" class="mx-3">
+            <label class="g fw-bold fs-4" for="symbols">Symbols</label>
+        </div>
+        <div class="my-3 d-flex align-items-center rounded range-box">
+
+            <div class="range w-100 h-100">
+                <div class="sliderValue">
+                    <span>100</span>
+                </div>
+                <div class="field">
+                    <div class="value left">
+                        3</div>
+                    <input type="range" min="3" max="20" value="6" steps="1" id="inputSlider">
+                    <div class="value right">
+                        20</div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center rounded my-4">
+            <button class="py-2 px-3 rounded-4 grnerate-btn" id="Generate-Password">Generate Password</button>
+        </div>
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
